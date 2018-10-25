@@ -287,6 +287,9 @@ used, the Docker-based workflow must be used.
 - `--userarg`: specify one or more key / value pairs that are passed
   through to the recipe as a dictionary named `USERARG`.
 
+- `--out`: specify an output directory where the container definition files are
+  written to.
+
 ## Current Limitations
 
 - Singularity does not support multi-stage containers.  This is a

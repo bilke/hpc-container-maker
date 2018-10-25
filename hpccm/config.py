@@ -29,3 +29,4 @@ from hpccm.common import linux_distro
 # Global variables
 g_ctype = container_type.DOCKER      # Container type
 g_linux_distro = linux_distro.UBUNTU # Linux distribution
+g_output_directory = None            # Output directory

@@ -71,7 +71,7 @@ from hpccm.building_blocks.python import python
 from hpccm.building_blocks.yum import yum
 
 def recipe(recipe_file, ctype=container_type.DOCKER, raise_exceptions=False,
-           single_stage=False, userarg=None):
+           single_stage=False, userarg=None, output_directory=None):
     """Recipe builder"""
 
     # Make user arguments available
@@ -86,6 +86,9 @@ def recipe(recipe_file, ctype=container_type.DOCKER, raise_exceptions=False,
 
     # Set the global container type
     hpccm.config.g_ctype = ctype
+
+    # Set global output directory
+    hpccm.config.g_output_directory = output_directory
 
     try:
         with open(recipe_file) as f:
