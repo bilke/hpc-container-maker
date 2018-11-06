@@ -1556,6 +1556,39 @@ Stage1 += p.runtime()
 python(python3=False)
 ```
 
+### scif
+
+The `scif` building block installs the
+[Scientific Filesystem](https://sci-f.github.io) executable `scif` via `pip`.
+
+Parameters:
+
+- `entrypoint`: Boolean flag to specify wheter `scif` should also be the
+  entrypoint of the container.
+
+### scif_app
+
+The `scif_app` building block installs a
+[Scientific Filesystem](https://sci-f.github.io) via the `scif` executables.
+This requires the `scif` building block.
+
+Parameters:
+
+Please refer to the
+[Scientific Filesystem documentation](https://sci-f.github.io///spec-v1#sections)
+for details:
+
+- `env`: Corresponds to `%appenv`.
+- `help`: Corresponds to `%apphelp`.
+- `install`: Corresponds to `%appinstall`.
+- `labels`: Corresponds to `%applabels`.
+- `name`: Corresponds to `%appname`. **Required**
+- `run`: Corresponds to `%apprun`.
+- `test`: Corresponds to `%apptest`.
+- `entrypoint`: Boolean flag to specify wheter the runscript of the app is also
+  the entrypoint of the container.
+
+
 ### yum
 
 The `yum` building block specifies the set of operating system

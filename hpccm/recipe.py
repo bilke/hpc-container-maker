@@ -68,6 +68,8 @@ from hpccm.building_blocks.packages import packages
 from hpccm.building_blocks.pgi import pgi
 from hpccm.building_blocks.pnetcdf import pnetcdf
 from hpccm.building_blocks.python import python
+from hpccm.building_blocks.scif import scif
+from hpccm.building_blocks.scif_app import scif_app
 from hpccm.building_blocks.yum import yum
 
 def recipe(recipe_file, ctype=container_type.DOCKER, raise_exceptions=False,
